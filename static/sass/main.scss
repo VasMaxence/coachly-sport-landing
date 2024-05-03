@@ -1,0 +1,104 @@
+@import "variables";
+@import "fonts";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Satoshi", sans-serif;
+  color: $darkBlue;
+}
+
+.permanent-dark-blue {
+  color: $darkBlue !important;
+}
+
+@keyframes slideFadeIn {
+  from {
+    width: 15px;
+    opacity: 0;
+    left: 15px;
+  }
+  to {
+    width: 15px;
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.align-end {
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  a {
+    color: $darkGrey;
+    text-decoration: none;
+
+    &:hover {
+      color: $darkBlue;
+    }
+
+    &::after {
+      content: "";
+      transition: all 1s ease;
+      display: block;
+      width: 15px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: $primary;
+      margin-top: -2px;
+      position: absolute;
+      opacity: 0;
+    }
+
+    &.nav-active::after {
+      animation: slideFadeIn 0.3s ease forwards;
+    }
+
+    &.nav-active {
+      color: $darkBlue !important;
+      font-weight: bold;
+      position: relative;
+
+      &:hover {
+        color: $darkBlue;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .nav-item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.primary-button {
+  background-color: $primary;
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: 35px !important;
+  width: 150px !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}

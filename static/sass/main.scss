@@ -1,6 +1,10 @@
 @import "variables";
 @import "fonts";
 
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 body,
 html {
   margin: 0;
@@ -31,20 +35,37 @@ html {
   justify-content: flex-end !important;
 }
 
+.main-logo {
+  display: flex;
+  height: 38px !important;
+  align-items: center;
+}
+
+.secondary-logo {
+  display: flex;
+  height: 45px !important;
+  align-items: center;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  padding-left: 65px;
-  padding-right: 65px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   a {
     color: $darkGrey;
     text-decoration: none;
+    font-weight: 500;
 
     &:hover {
       color: $darkBlue;
@@ -81,7 +102,6 @@ html {
 
   .nav-item {
     display: flex;
-    flex: 1;
     align-items: center;
     gap: 20px;
   }
@@ -91,8 +111,8 @@ html {
   background-color: $primary;
   padding: 10px 20px;
   border-radius: 10px;
-  height: 35px !important;
-  width: 150px !important;
+  height: 50px !important;
+  width: 200px !important;
   display: flex;
   align-items: center !important;
   justify-content: center !important;
@@ -101,4 +121,115 @@ html {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.border-red-500 {
+  border-color: red !important;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $divider;
+}
+
+.coachly-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: $darkBlue;
+}
+
+.coachly-white-title {
+  font-size: 62px;
+  font-weight: bold;
+  color: white;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.coachly-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  .coachly-form-input-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: $darkBlue;
+  }
+
+  .coachly-form-input {
+    padding: 15px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    padding-right: 20px;
+    background-color: $lightGrey;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $darkBlue;
+
+    &:hover {
+      border: 1px solid $primary;
+    }
+
+    &:focus {
+      border: 1px solid $primary;
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.border-box-grey {
+  border: 1px solid $border;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+.border-radius-40 {
+  border-radius: 40px;
+}
+
+.low-white-button {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  width: 300px;
+
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+}
+
+.coachly-footer {
+  .footer-column {    
+    .footer-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: $darkGrey;
+    }
+
+    .footer-link {
+      font-size: 17px;
+      font-weight: 500;
+      color: $darkBlue;
+
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+  }
+
 }

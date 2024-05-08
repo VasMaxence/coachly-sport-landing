@@ -213,10 +213,10 @@ html {
 }
 
 .coachly-footer {
-  .footer-column {    
+  .footer-column {
     .footer-title {
       font-size: 13px;
-      font-weight: bold;
+      font-weight: 500;
       color: $darkGrey;
     }
 
@@ -231,5 +231,236 @@ html {
       }
     }
   }
+}
 
+.line-under-start-pink::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-radius: 5px;
+  height: 5px;
+  background-color: $mainPink;
+  margin-top: -8px;
+}
+
+.line-under-start-orange::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-radius: 5px;
+  height: 5px;
+  background-color: $mainOrange;
+  margin-top: -8px;
+}
+
+.color-lowpink {
+  background-color: $lowPink !important;
+}
+
+.color-lowOrange {
+  background-color: $lowOrange !important;
+}
+
+.text-mainpink {
+  color: $mainPink !important;
+}
+
+.text-mainOrange {
+  color: $mainOrange !important;
+}
+
+.blog-pagination-button {
+  background-color: $lightGrey;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: $darkBlue;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.blog-card {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f9f9fa;
+  border: 1px solid transparent;
+  padding: 21px;
+
+  &:hover {
+    border: 1px solid $mainPink;
+  }
+
+  &:hover > .card-link {
+    text-decoration: underline;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $darkBlue;
+  }
+
+  .card-link {
+    color: $mainPink;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .card-description {
+    height: 200px;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 300;
+    color: $grey;
+    text-overflow: ellipsis;
+  }
+}
+
+.flex-3 {
+  flex: 3 !important;
+}
+
+.flex-4 {
+  flex: 4 !important;
+}
+
+.blog-page {
+  .image {
+    height: 525px !important;
+  }
+}
+
+.tutorial-list {
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $darkBlue;
+  }
+
+  .section-desc {
+    font-size: 23px;
+    font-weight: 400;
+    color: $darkGrey;
+  }
+
+  .tutorial-card {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #f9f9fa;
+    border: 1px solid transparent;
+    padding: 21px;
+
+    &:hover {
+      border: 1px solid $mainOrange;
+    }
+
+    &:hover > .card-link {
+      text-decoration: underline;
+    }
+
+    .tutorial-main-image {
+      width: 100%;
+      object-fit: contain;
+      height: 150px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: $darkBlue;
+    }
+
+    .card-link {
+      color: $mainOrange;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .card-description {
+      height: 100px;
+      overflow: hidden;
+      font-size: 17px;
+      font-weight: 300;
+      color: $grey;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.tutorial-page {
+  .tutorial-redirect-list {
+    background-color: $lightGrey;
+    border-radius: 20px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: $darkGrey;
+  }
+
+  .section-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: $darkBlue;
+
+    &.link-active::after {
+      animation: slideFadeIn2 0.3s ease forwards;
+    }
+
+    &::after {
+      content: "";
+      transition: all 1s ease;
+      display: block;
+      width: 12px;
+      height: 3px;
+      border-radius: 15px;
+      background-color: $primary;
+      margin-top: -2px;
+      position: absolute;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@keyframes slideFadeIn2 {
+  from {
+    opacity: 0;
+    left: 2rem;
+  }
+  to {
+    opacity: 1;
+    left: 1rem;
+  }
+}
+
+.coachly-project {
+  .lowblue-bento-box {
+    border-radius: 20px;
+    background-color: $lowBlue;
+  }
+
+  .bento-box {
+    border-radius: 20px;
+    background-color: $lowGrey;
+  }
 }

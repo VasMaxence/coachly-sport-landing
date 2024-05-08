@@ -6,20 +6,19 @@
     <!-- Space before contact grid (only on tablet / web)  -->
     <div class="md:py-8"></div>
 
-    <!-- Blog list and items -->
+    <!-- All the tutorial... -->
     <div class="lg:px-24 md:px-20 px-8">
-      <div class="container color-lowpink rounded-2xl px-12 py-5">
-        <h1 class="coachly-title line-under-start-pink ">
-          {{ $t("blocTitle.1") }}
-          <span class="text-mainpink">{{ $t("blocTitle.2") }}</span>
-          {{ $t("blocTitle.3") }}
+      <div class="container color-lowOrange rounded-2xl px-12 py-5">
+        <h1 class="coachly-title line-under-start-orange">
+          {{ $t("tutorialTitle.1") }}
+          <span class="text-mainOrange">{{ $t("tutorialTitle.2") }}</span>
+          {{ $t("tutorialTitle.3") }}
         </h1>
       </div>
 
       <div class="py-2"></div>
 
-      <BlogItemList />
-      
+      <TutorialItemList />
     </div>
 
     <!-- Footer -->
@@ -31,6 +30,7 @@
 <script lang="ts">
 import NavBar from "../components/NavBar.vue";
 import Footer from "../components/Footer.vue";
+import TutorialItemList from "../components/tutorial/TutorialItemList.vue";
 import Vue from "vue";
 import VueI18n from "vue-i18n";
 
@@ -45,8 +45,8 @@ const messages = {
 };
 
 const i18n = new VueI18n({
-  locale: "fr", // set locale
-  messages, // set locale messages
+  locale: "fr",
+  messages,
 });
 
 export default Vue.extend({
@@ -54,6 +54,7 @@ export default Vue.extend({
   components: {
     NavBar,
     Footer,
+    TutorialItemList,
   },
   i18n,
 });

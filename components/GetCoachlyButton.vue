@@ -1,7 +1,7 @@
 <template>
-  <component class="primary-button" @click="() => openCoachlyStore()">
+  <div class="primary-button" @click="() => openCoachlyStore()">
     {{ $t("navigationGetCoachly") }}
-  </component>
+  </div>
 </template>
 
 <script>

@@ -153,7 +153,9 @@ export default Vue.extend({
           throw new Error("Error while sending email");
         }
 
-        this.$toast.success(this.$t("contactSuccess"));
+        this.$toast.success(this.$t("contactSuccess"), {
+          
+        });
         this.formData.name = "";
         this.formData.email = "";
         this.formData.message = "";

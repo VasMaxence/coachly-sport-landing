@@ -41,6 +41,114 @@ export default {
   footerClientPolicy: "Politique de confidentialité Client",
 
   /**
+   * Contenu de la page principale, la page d'acceuil
+   * aussi appelé Index.
+   *
+   * Il y a plusieurs sections dans ces traductions, chaque
+   * session sera séparée par un commentaire.
+   */
+  /// Présentation de l'application coach
+  homeCoachApp: {
+    title: {
+      1: "Le logiciel imaginé pour les ",
+      2: "coachs",
+    }
+  },
+  homeCoachMobileApp: {
+    title: {
+      1: "Un application mobile pour gérer vos ",
+      2: "coachings",
+    }
+  },
+  getCoachlyCoach: "Télécharger Coachly Pro",
+
+  /// Présentation de l'application client
+  getCoachlyClient: "Télécharger Coachly gratuitement",
+  homeClientApp: {
+    title: {
+      1: "Sportifs, ",
+      2: "trouvez",
+      3: "le coach qui vous correspond",
+    },
+    sec1: {
+      title: "Vous qui êtes occupés, gagnez du temps !",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend quis sem in tempor. Quisque vulputate condimentum malesuada. Suspendisse dignissim libero nibh, vitae bibendum arcu iaculis ac. Nullam in neque bibendum arcu malesuada convallis. Aliquam faucibus semper faucibus.",
+      link: "Découvrir les fonctionnalités",
+    },
+    sec2: {
+      title: "Réservez des séances",
+      subtitle: "En 5 minutes top chrono",
+      body: "Lorem ipsum ",
+    },
+    sec3: {
+      title: "Section numéro 3",
+      subtitle: "En 5 minutes top chrono",
+      body: "Lorem ipsum",
+    },
+    sec4: {
+      title: "Section numéro 4",
+      subtitle: "En 5 minutes top chrono",
+      body: "Lorem ipsum ",
+    },
+  },
+  discoverFunctionnalty: "Découvrir les fonctionnalités",
+
+  /// Presentation de l'application / projet
+  indexBentoTitle: {
+    1: "L'objectif",
+    2: " de Coachly",
+  },
+  indexBentoBody: {
+    title: "Réunir les sportifs et les coachs",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend quis sem in tempor. Quisque vulputate condimentum malesuada. Suspendisse dignissim libero nibh, vitae bibendum arcu iaculis ac.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend quis sem in tempor. Quisque vulputate condimentum malesuada. Suspendisse dignissim libero nibh, vitae bibendum arcu iaculis ac.",
+  },
+  indexBentoTitle2: {
+    1: "Laissez-nous vous ",
+    2: "raconter",
+    3: " l'histoire et les objectifs de Coachly",
+  },
+  indexBento2Body: {
+    title: "Une histoire de passionés",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend quis sem in tempor. Quisque vulputate condimentum malesuada. Suspendisse dignissim libero nibh, vitae bibendum arcu iaculis ac.",
+  },
+
+  /// Section de présentation des partenaires
+  trustUsTitle: {
+    1: "Ils ont décidés de nous faire ",
+    2: "confiance ⭐️",
+  },
+  enrollNowTitle: {
+    1: "Vous aussi",
+    2: " suivez le mouvement Coachly 💪",
+  },
+  enrollSection: {
+    first: {
+      value: "+ 20 000",
+      title: "clients utilisent Coachly",
+    },
+    second: {
+      value: "450",
+      title: "coachs nous ont rejoint",
+    },
+    third: {
+      value: "+ 30",
+      title: "sport différents",
+    },
+  },
+
+  /// Traduction de la section pour s'inscrire à la Newsletter
+  newsletterTitle: {
+    1: "Inscrivez vous à la ",
+    2: "Newsletter",
+  },
+  joinNewsletter: "S'inscrire",
+  newsletterEmailHint: "John.doe@coachly-sport.fr",
+  newsletterEmail: "Votre adresse e-mail",
+  newsletterEmptyData: "Renseignez votre adresse e-mail.",
+  newsletterSuccess: "C'est fait ! Vous êtes bien inscrit à notre newsletter.",
+
+  /**
    * Page des blogs
    *
    * Ici, nous pouvons trouver les traductions principales

@@ -5,6 +5,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "aos/dist/aos.css";
+
 body,
 html {
   margin: 0;
@@ -15,6 +17,12 @@ html {
 
 .permanent-dark-blue {
   color: $darkBlue !important;
+}
+
+.red-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
 @keyframes slideFadeIn {
@@ -123,6 +131,26 @@ html {
   cursor: pointer;
 }
 
+.secondary-button {
+  background-color: $lowBlue;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  height: 50px !important;
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: $primary;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $primary;
+  }
+}
+
 .border-red-500 {
   border-color: red !important;
 }
@@ -131,6 +159,35 @@ html {
   width: 100%;
   height: 1px;
   background-color: $divider;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 100%;
+  background-color: $divider;
+}
+
+.coachly-main-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: $darkBlue;
+  line-height: 1.2;
+}
+
+.primary-color {
+  color: $primary !important;
+}
+
+.green-color {
+  color: $green !important;
+}
+
+.orange-color {
+  color: $mainOrange !important;
+}
+
+.darkgrey {
+  color: $darkGrey !important;
 }
 
 .coachly-title {
@@ -453,14 +510,78 @@ html {
   }
 }
 
+.Vue-Toastification__toast-body {
+  color: white !important;
+}
+
+.link-green {
+  color: $green !important;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.link-orange {
+  color: $mainOrange !important;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
 .coachly-project {
+
+  .bento-img  {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 1px solid $divider;
+  }
+
   .lowblue-bento-box {
     border-radius: 20px;
-    background-color: $lowBlue;
+    background-color: $lowBlue !important;
+  }
+  
+  .lowgreen-bento-box {
+    border-radius: 20px;
+    background-color: $lowGreen !important;
+  }
+  
+  .lowograne-bento-box {
+    border-radius: 20px;
+    background-color: $lowOrange !important;
+  }
+
+  .bento-border-box {
+    border-radius: 20px;
+    border: 1px solid $divider;
   }
 
   .bento-box {
     border-radius: 20px;
     background-color: $lowGrey;
+
+    .bento-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: $darkBlue;
+    }
+
+    .bento-value {
+      font-size: 48px;
+      font-weight: bold;
+      color: $darkBlue;
+    }
+
+    .bento-subtitle {
+      font-size: 15px;
+      font-weight: 400;
+      color: $darkGrey;
+      font-style: italic;
+    }
   }
 }

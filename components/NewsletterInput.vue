@@ -11,7 +11,7 @@
       </div>
 
       <div class="px-1">
-        <div class="bento-border-box h-auto md:h-[145px] w-full grid grid-cols-1 md:grid-cols-[70%_5%_25%] px-8 py-6 gap-y-[4px]" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+        <div class="bento-border-box bg-white h-auto md:h-[145px] w-full grid grid-cols-1 md:grid-cols-[70%_5%_25%] px-8 py-6 gap-y-[4px]" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
           <div class="flex items-center justify-center">
             <CoachlyTextFormField v-model="formData.email" placeholder="newsletterEmail" />
           </div>

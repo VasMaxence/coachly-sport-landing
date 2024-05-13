@@ -19,10 +19,12 @@ html {
   color: $darkBlue !important;
 }
 
-.red-box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.main-web-img {
+  height: 78vh !important;
+}
+
+.main-web-img-low {
+  height: 50vh !important;
 }
 
 @keyframes slideFadeIn {
@@ -73,7 +75,7 @@ html {
   a {
     color: $darkGrey;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 
     &:hover {
       color: $darkBlue;
@@ -98,12 +100,12 @@ html {
 
     &.nav-active {
       color: $darkBlue !important;
-      font-weight: bold;
+      font-weight: 500;
       position: relative;
 
       &:hover {
         color: $darkBlue;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
   }
@@ -131,10 +133,15 @@ html {
   cursor: pointer;
 }
 
+.bg-low-grey {
+  background-color: $lowGrey !important;
+}
+
 .secondary-button {
   background-color: $lowBlue;
   border-radius: 10px;
   border: 1px solid transparent;
+  padding: 10px 20px;
   height: 50px !important;
   width: 100%;
   display: flex;
@@ -167,11 +174,15 @@ html {
   background-color: $divider;
 }
 
+.sp-61 {
+  font-size: 61px !important;
+}
+
 .coachly-main-title {
   font-size: 34px;
   font-weight: bold;
   color: $darkBlue;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .primary-color {
@@ -523,6 +534,16 @@ html {
   }
 }
 
+
+.link-primary {
+  color: $primary !important;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
 .link-orange {
   color: $mainOrange !important;
 
@@ -533,8 +554,7 @@ html {
 }
 
 .coachly-project {
-
-  .bento-img  {
+  .bento-img {
     width: 100%;
     object-fit: cover;
     border-radius: 40px;
@@ -545,12 +565,12 @@ html {
     border-radius: 20px;
     background-color: $lowBlue !important;
   }
-  
+
   .lowgreen-bento-box {
     border-radius: 20px;
     background-color: $lowGreen !important;
   }
-  
+
   .lowograne-bento-box {
     border-radius: 20px;
     background-color: $lowOrange !important;
@@ -584,4 +604,50 @@ html {
       font-style: italic;
     }
   }
+}
+
+.main-view {
+  .coachly-main-title {
+    font-size: 61px;
+    font-weight: bold;
+    color: $darkBlue;
+    line-height: 1.1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .coachly-main-title {
+      font-size: 48px;
+    }
+  }
+
+  .body {
+    font-size: 17px;
+    color: $darkGrey;
+    font-weight:lighter;
+  }
+}
+
+.color-white {
+  color: white !important;
+
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-darkblue {
+  background-color: $darkBlue !important;
+}
+
+.bg-lowwhite {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.bg-low-primary {
+  background-color: rgba(40, 88, 255, 0.15) !important;
 }

@@ -11,18 +11,23 @@
     <!-- Bento with project information and team -->
 
     <HomeMainView />
-
-    <CoachAppBento />
-    <div class="py-12"></div>
-    <CoachMobileAppBento />
-    <div class="py-24"></div>
-    <ClientAppBento />
-    <div class="py-24"></div>
+    <div class="py-16"></div>
     <ProjectBento />
-    <div class="py-24"></div>
+    <div class="py-20"></div>
+    <CoachAppBento />
+    <div class="py-8"></div>
+    <CoachMobileAppBento />
+    <div class="py-20"></div>
+    <ClientAppBento />
+    <div class="py-20"></div>
     <HeTrustUsBento />
-    <div class="py-24"></div>
+    <div class="py-12"></div>
+    <BookADemo />
+    <div class="py-6"></div>
     <NewsletterInput />
+    <div class="py-6"></div>
+    <!-- TODO Blog Items... -->
+    <BlogPost />
 
     <!-- Footer -->
     <div class="py-8"></div>
@@ -34,9 +39,11 @@
 import NavBar from "~/components/NavBar.vue";
 import Footer from "~/components/Footer.vue";
 import HomeMainView from "~/components/home/HomeMainView.vue";
+import BookADemo from "~/components/home/BookADemo.vue";
 import CoachAppBento from "~/components/home/CoachAppBento.vue";
 import CoachMobileAppBento from "~/components/home/CoachMobileAppBento.vue";
 import ClientAppBento from "~/components/home/ClientAppBento.vue";
+import BlogPost from "~/components/home/BlogPost.vue";
 import ProjectBento from "~/components/home/ProjectBento.vue";
 import NewsletterInput from "~/components/NewsletterInput.vue";
 import HeTrustUsBento from "~/components/home/HeTrustUsBento.vue";
@@ -67,6 +74,8 @@ export default Vue.extend({
     CoachMobileAppBento,
     ClientAppBento,
     ProjectBento,
+    BookADemo,
+    BlogPost,
     HeTrustUsBento,
     NewsletterInput,
     Footer,

@@ -47,18 +47,37 @@ export default {
    * Il y a plusieurs sections dans ces traductions, chaque
    * session sera séparée par un commentaire.
    */
+  /// Main view
+  homeMainView: {
+    title: {
+      1: "La révolution ",
+      2: "sportive",
+      3: " est arrivé",
+    },
+    body: "Coachly est une application mobile qui réunit les sportifs et les coachs. Trouvez le coach qui vous correspond, réservez des séances en quelques clics et suivez votre progression.",
+    discover: "Découvrir nos solutions",
+  },
+
+  homeVideo: {
+    title: {
+      1: "Découvrez les solutions ",
+      2: "Coachly",
+      3: " en vidéo",
+    },
+  },
+
   /// Présentation de l'application coach
   homeCoachApp: {
     title: {
       1: "Le logiciel imaginé pour les ",
       2: "coachs",
-    }
+    },
   },
   homeCoachMobileApp: {
     title: {
       1: "Un application mobile pour gérer vos ",
       2: "coachings",
-    }
+    },
   },
   getCoachlyCoach: "Télécharger Coachly Pro",
 
@@ -133,7 +152,7 @@ export default {
     },
     third: {
       value: "+ 30",
-      title: "sport différents",
+      title: "sports différents",
     },
   },
 

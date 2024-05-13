@@ -3,12 +3,12 @@
     <div class="flex-1 flex justify-start">
       <CoachlyFullLogo />
     </div>
-    <div class="flex-2 justify-center hidden lg:flex lg:gap-8 md:gap-5">
+    <div class="flex-2 justify-center hidden lg:flex lg:gap-12 md:gap-5">
       <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :class="{ 'nav-active': isActive(link.to) }" class="p-0">
         {{ $t(link.name) }}
       </NuxtLink>
     </div>
-    <div class="flex-1 justify-end hidden lg:flex items-center gap-5">
+    <div class="flex-1 justify-end hidden lg:flex items-center gap-8">
       <a href="https://coachly-sport.app/" target="_blank" class="permanent-dark-blue">
         {{ $t("navigationLogin") }}
       </a>

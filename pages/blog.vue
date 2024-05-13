@@ -8,7 +8,7 @@
 
     <!-- Blog list and items -->
     <div class="lg:px-24 md:px-20 px-8">
-      <div class="container color-lowpink rounded-2xl px-12 py-5">
+      <div class="color-lowpink rounded-2xl px-12 py-5">
         <h1 class="coachly-title line-under-start-pink ">
           {{ $t("blocTitle.1") }}
           <span class="text-mainpink">{{ $t("blocTitle.2") }}</span>
